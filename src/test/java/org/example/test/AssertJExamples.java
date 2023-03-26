@@ -3,7 +3,11 @@ package org.example.test;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+
+
 
 /**
  * AssertJ examples
@@ -49,4 +53,5 @@ public class AssertJExamples {
                 .containsExactlyInAnyOrder(2.3F, 5.7F, 6.8F, 2.45F, 5.98F, 90.34F, 100.23F)
                 .startsWith(2.3F);
     }
+
 }

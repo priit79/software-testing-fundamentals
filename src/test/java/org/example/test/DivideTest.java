@@ -5,7 +5,7 @@ import org.example.calculator.Divide;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+
 
 class DivideTest {
 
@@ -14,10 +14,17 @@ class DivideTest {
 
         int[] array = {1000, 2};
 
+        int[] array1 = {55, 68};
+
+        int[] array2 = {55, 68};
+
+
         Divide divide = new Divide();
         int result = divide.divideArray(array);
 
         Assertions.assertEquals(500, result);
+
+        Assertions.assertArrayEquals(array1, array2);
 
     }
 }
